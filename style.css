@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap');
+
+:root {
+    --firstColor: #f0f0f0;
+    --secondColor: #c18e25;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.first-backgorund {
+    flex: 6;
+    background-color: var(--firstColor);
+}
+
+.second-backgorund {
+    flex: 4;
+    background-color: var(--secondColor);
+}
+
+
+.card {
+    background-color: white;
+    min-height: 90%;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -2px 0px 27px -1px rgba(0, 0, 0, 0.89);
+    -webkit-box-shadow: -2px 0px 27px -1px rgba(0, 0, 0, 0.89);
+    -moz-box-shadow: -2px 0px 27px -1px rgba(0, 0, 0, 0.89);
+    border-radius: 10px;
+}
+
+.card .desc {
+    position: relative;
+}
+
+.card .desc img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    position: absolute;
+    right: 50px;
+}
+
+.desc p {
+    font-size: 11px;
+    padding: 40px;
+    width: 50%;
+}
+
+.infos {
+    background-color: var(--firstColor);
+    margin-left: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.infos .me {
+    flex: 1;
+}
+
+.infos .me h1 {
+    /* font-size: 25px; */
+    font-size: 30px;
+    width: fit-content;
+}
+
+.infos .me h1.hi {
+    margin-bottom: -10px;
+}
+
+.infos .me .major {
+    text-transform: uppercase;
+    color: var(--secondColor);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.infos .data {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.infos .data ul.contacts {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: absolute;
+    left: -150%;
+}
+
+.infos .data ul.contacts li {
+    font-size: 9px;
+    color: var(--secondColor);
+}
+
+.infos .data ul.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.infos .data ul.social li i {
+    font-size: 10px;
+}
+
+
+.cv-details {
+    padding: 10px 40px 40px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-details .part {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+@media (max-width: 767px) {
+    .cv-details {
+        flex-direction: column;
+    }
+}
+
+.cv-details .part .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.cv-details .part .item .job {
+    display: flex;
+    gap: 3px;
+}
+
+
+.cv-details .part .item .job p {
+    color: var(--secondColor)
+}
